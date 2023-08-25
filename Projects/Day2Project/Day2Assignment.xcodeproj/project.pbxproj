@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA358A262A98533100C17BC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA358A252A98533100C17BC7 /* LoginViewController.swift */; };
+		CA358A282A98647700C17BC7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA358A272A98647700C17BC7 /* CalculatorViewController.swift */; };
 		CAF3CCBC2A97DEDB00C6512B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3CCBB2A97DEDB00C6512B /* AppDelegate.swift */; };
 		CAF3CCBE2A97DEDB00C6512B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3CCBD2A97DEDB00C6512B /* SceneDelegate.swift */; };
 		CAF3CCC02A97DEDB00C6512B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3CCBF2A97DEDB00C6512B /* ViewController.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA358A252A98533100C17BC7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA358A272A98647700C17BC7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		CAF3CCB82A97DEDB00C6512B /* Day2Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day2Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF3CCBB2A97DEDB00C6512B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF3CCBD2A97DEDB00C6512B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				CAF3CCC42A97DEDC00C6512B /* Assets.xcassets */,
 				CAF3CCC62A97DEDC00C6512B /* LaunchScreen.storyboard */,
 				CAF3CCC92A97DEDC00C6512B /* Info.plist */,
-				CA358A252A98533100C17BC7 /* LoginViewController.swift */,
+				CA358A272A98647700C17BC7 /* CalculatorViewController.swift */,
 			);
 			path = Day2Assignment;
 			sourceTree = "<group>";
@@ -261,9 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA358A262A98533100C17BC7 /* LoginViewController.swift in Sources */,
 				CAF3CCC02A97DEDB00C6512B /* ViewController.swift in Sources */,
 				CAF3CCBC2A97DEDB00C6512B /* AppDelegate.swift in Sources */,
+				CA358A282A98647700C17BC7 /* CalculatorViewController.swift in Sources */,
 				CAF3CCBE2A97DEDB00C6512B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

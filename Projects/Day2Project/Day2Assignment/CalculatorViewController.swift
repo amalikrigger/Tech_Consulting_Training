@@ -1,13 +1,13 @@
 //
-//  LoginViewController.swift
+//  CalculatorViewController.swift
 //  Day2Assignment
 //
-//  Created by Amali Krigger on 8/24/23.
+//  Created by Amali Krigger on 8/25/23.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
