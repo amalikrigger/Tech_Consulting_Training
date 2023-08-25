@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Cc-mF-4I0">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -87,6 +87,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0K-vK-CMw">
+                                <rect key="frame" x="174" y="252.33333333333334" width="194" height="95.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="m8l-La-3bM">
                                 <rect key="frame" x="25" y="368" width="343" height="420"/>
                                 <subviews>
@@ -246,7 +252,9 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="m8l-La-3bM" secondAttribute="trailing" constant="25" id="15L-Qx-ELW"/>
+                            <constraint firstAttribute="trailing" secondItem="W0K-vK-CMw" secondAttribute="trailing" constant="25" id="Jhy-lD-a2H"/>
                             <constraint firstItem="m8l-La-3bM" firstAttribute="leading" secondItem="wd6-9e-2x4" secondAttribute="leading" constant="25" id="LbF-KT-pmz"/>
+                            <constraint firstItem="m8l-La-3bM" firstAttribute="top" secondItem="W0K-vK-CMw" secondAttribute="bottom" constant="20" id="NIc-P4-NgF"/>
                             <constraint firstItem="6eN-fE-rb6" firstAttribute="bottom" secondItem="m8l-La-3bM" secondAttribute="bottom" constant="30" id="kps-Ta-Oxq"/>
                         </constraints>
                     </view>
@@ -260,6 +268,9 @@
         <image name="background2" width="3334" height="5001"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
