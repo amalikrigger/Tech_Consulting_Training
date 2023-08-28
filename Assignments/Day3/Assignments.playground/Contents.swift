@@ -119,15 +119,14 @@ class Robot {
             moveForward()
         case "R":
             turnRight()
-        case "L":
-            turnLeft()
         default:
-            print("N/A")
+            turnLeft()
         }
     }
     
     func moveForward() {
-        if (orientation == "N") {
+        switch orientation {
+        case "N":
             let newPosition = [position[0], position[1] + 1]
             if (grid.ignoreCoordinates.contains(newPosition)) {
                 return
@@ -139,7 +138,7 @@ class Robot {
             } else {
                 position = newPosition
             }
-        } else if (orientation == "E") {
+        case "E":
             let newPosition = [position[0] + 1, position[1]]
             if (grid.ignoreCoordinates.contains(newPosition)) {
                 return
@@ -150,7 +149,7 @@ class Robot {
             } else {
                 position = newPosition
             }
-        } else if (orientation == "S") {
+        case "S":
             let newPosition = [position[0], position[1] - 1]
             if (grid.ignoreCoordinates.contains(newPosition)) {
                 return
@@ -161,7 +160,7 @@ class Robot {
             } else {
                 position = newPosition
             }
-        } else {
+        default:
             let newPosition = [position[0] - 1, position[1]]
             if (grid.ignoreCoordinates.contains(newPosition)) {
                 return
