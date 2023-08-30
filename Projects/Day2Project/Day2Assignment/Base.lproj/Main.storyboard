@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SRN-ew-jtt">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="1ly-v2-RcI"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eej-MF-baS" userLabel="Password">
                                 <rect key="frame" x="30" y="441" width="333" height="50"/>
@@ -42,7 +46,7 @@
                                     <constraint firstAttribute="height" constant="50" id="j0S-HX-FwD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AND-Di-3tq">
                                 <rect key="frame" x="30" y="361" width="333" height="50"/>
@@ -74,15 +78,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XZE-ho-2oC" secondAttribute="bottom" constant="20" id="zdZ-9b-7ne"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="XZE-ho-2oC" id="24i-Ah-Vin"/>
+                        <outlet property="passwordTextField" destination="Eej-MF-baS" id="K1h-Bt-J0G"/>
+                        <outlet property="usernameTextField" destination="AND-Di-3tq" id="yuC-Nu-2NG"/>
+                        <segue destination="hmD-uo-6ZW" kind="show" identifier="navigateToCalculator" id="maA-Pc-d9J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="3.5211267605633805"/>
         </scene>
-        <!--Calculator View Controller-->
+        <!--View Controller-->
         <scene sceneID="2JQ-p5-KAn">
             <objects>
-                <viewController id="0Cc-mF-4I0" customClass="CalculatorViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Cc-mF-4I0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wd6-9e-2x4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,10 +268,94 @@
                             <constraint firstItem="6eN-fE-rb6" firstAttribute="bottom" secondItem="m8l-La-3bM" secondAttribute="bottom" constant="30" id="kps-Ta-Oxq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="z7j-5w-Y5t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4u-zW-jHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="4"/>
+            <point key="canvasLocation" x="-109" y="942"/>
+        </scene>
+        <!--Student Table View Controller-->
+        <scene sceneID="3ss-6z-6Kv">
+            <objects>
+                <viewController id="SRN-ew-jtt" customClass="StudentTableViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YEn-Q6-WxY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g78-iV-0Ot">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="sDb-Rv-aVN" customClass="StudentTableViewCell" customModule="Day2Assignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sDb-Rv-aVN" id="Cmz-fS-Ewl">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A2m-Cg-GKw" userLabel="avatar">
+                                                    <rect key="frame" x="20" y="25" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="W8M-Ej-hUw"/>
+                                                        <constraint firstAttribute="height" constant="100" id="g7e-mk-6ZZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGg-1S-l4H" userLabel="name">
+                                                    <rect key="frame" x="170" y="25" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnn-Xw-jf5" userLabel="email">
+                                                    <rect key="frame" x="170" y="64.666666666666671" width="41" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq1-X6-Twx" userLabel="dob">
+                                                    <rect key="frame" x="170" y="104" width="36" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aq1-X6-Twx" firstAttribute="leading" secondItem="A2m-Cg-GKw" secondAttribute="trailing" constant="50" id="8Zk-WA-bWM"/>
+                                                <constraint firstItem="aq1-X6-Twx" firstAttribute="bottom" secondItem="A2m-Cg-GKw" secondAttribute="bottom" id="B7m-lM-141"/>
+                                                <constraint firstItem="HGg-1S-l4H" firstAttribute="top" secondItem="A2m-Cg-GKw" secondAttribute="top" id="Gh2-Lo-TsU"/>
+                                                <constraint firstItem="fnn-Xw-jf5" firstAttribute="leading" secondItem="A2m-Cg-GKw" secondAttribute="trailing" constant="50" id="R5R-Vx-ozw"/>
+                                                <constraint firstItem="A2m-Cg-GKw" firstAttribute="leading" secondItem="Cmz-fS-Ewl" secondAttribute="leading" constant="20" id="U9d-vM-Pxc"/>
+                                                <constraint firstItem="fnn-Xw-jf5" firstAttribute="centerY" secondItem="A2m-Cg-GKw" secondAttribute="centerY" id="Uq6-xI-AcG"/>
+                                                <constraint firstItem="HGg-1S-l4H" firstAttribute="leading" secondItem="A2m-Cg-GKw" secondAttribute="trailing" constant="50" id="WOj-6U-rGC"/>
+                                                <constraint firstItem="A2m-Cg-GKw" firstAttribute="centerY" secondItem="Cmz-fS-Ewl" secondAttribute="centerY" id="mbY-OK-ZAo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dobLabel" destination="aq1-X6-Twx" id="Xy1-jv-7EM"/>
+                                            <outlet property="emailLabel" destination="fnn-Xw-jf5" id="jm4-I6-5PR"/>
+                                            <outlet property="nameLabel" destination="HGg-1S-l4H" id="09g-rm-3ju"/>
+                                            <outlet property="studentImage" destination="A2m-Cg-GKw" id="azc-hb-Cpk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dPf-Zf-zNo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dPf-Zf-zNo" firstAttribute="bottom" secondItem="g78-iV-0Ot" secondAttribute="bottom" id="8cz-P8-vL9"/>
+                            <constraint firstItem="g78-iV-0Ot" firstAttribute="top" secondItem="dPf-Zf-zNo" secondAttribute="top" id="FRm-z7-cSQ"/>
+                            <constraint firstItem="dPf-Zf-zNo" firstAttribute="trailing" secondItem="g78-iV-0Ot" secondAttribute="trailing" id="QFr-7y-snv"/>
+                            <constraint firstItem="g78-iV-0Ot" firstAttribute="leading" secondItem="dPf-Zf-zNo" secondAttribute="leading" id="SVp-Wd-sKG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="g78-iV-0Ot" id="TGP-hq-Qzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nn-Xs-1MF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IT4-qv-QXu">
@@ -332,47 +426,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZW-CK-mK5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47" y="701"/>
+            <point key="canvasLocation" x="-847" y="942"/>
         </scene>
         <!--Calculator View Controller-->
         <scene sceneID="Gyg-YY-HGm">
             <objects>
                 <viewController id="hmD-uo-6ZW" customClass="CalculatorViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NON-Ar-NnG">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-px-xIv">
+                                <rect key="frame" x="10" y="5" width="373" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wsZ-cZ-6Nx">
-                                <rect key="frame" x="20" y="461.33333333333326" width="337" height="346.66666666666674"/>
+                                <rect key="frame" x="30" y="499" width="333" height="323"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl1-Ql-w4j">
-                                        <rect key="frame" x="0.0" y="0.0" width="337" height="71.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl1-Ql-w4j">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="L93-1w-sKY">
-                                        <rect key="frame" x="0.0" y="86.666666666666686" width="337" height="40"/>
+                                        <rect key="frame" x="0.0" y="63" width="333" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg4-16-Fn5">
-                                                <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="AC" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="cancelTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="nJD-XJ-q2c"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4v-ID-jI1">
-                                                <rect key="frame" x="91.666666666666671" y="0.0" width="62.000000000000014" height="40"/>
+                                                <rect key="frame" x="90.666666666666671" y="0.0" width="61.000000000000014" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="+/-" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="signTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="XtI-A6-NZ7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yi-An-2ST">
-                                                <rect key="frame" x="183.66666666666666" y="0.0" width="61.666666666666657" height="40"/>
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="60.666666666666657" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="%" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="percentTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="Ctw-mE-BoG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3M-H7-Z0s">
-                                                <rect key="frame" x="275.33333333333331" y="0.0" width="61.666666666666686" height="40"/>
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="60.666666666666686" height="40"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="/" cornerStyle="capsule"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="/" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="divideTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="yr6-fI-zDa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -380,27 +494,41 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6QU-8S-Mmu">
-                                        <rect key="frame" x="0.0" y="141.66666666666669" width="337" height="40"/>
+                                        <rect key="frame" x="0.0" y="118" width="333" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xq-IQ-T1q">
-                                                <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="7" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="sevenTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="cwr-XQ-4Uh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aI-Da-XAw">
-                                                <rect key="frame" x="91.666666666666671" y="0.0" width="62.000000000000014" height="40"/>
+                                                <rect key="frame" x="90.666666666666671" y="0.0" width="61.000000000000014" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="8" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="eightTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="c3y-u1-JZi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-kL-OkS">
-                                                <rect key="frame" x="183.66666666666666" y="0.0" width="61.666666666666657" height="40"/>
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="60.666666666666657" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="9" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="nineTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="37c-aq-I0I"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihe-Af-Iz6">
-                                                <rect key="frame" x="275.33333333333331" y="0.0" width="61.666666666666686" height="40"/>
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="60.666666666666686" height="40"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="X" cornerStyle="capsule"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="X" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="multiplyTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="9vi-02-UtJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -408,29 +536,41 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JxR-Eg-ygb">
-                                        <rect key="frame" x="0.0" y="196.66666666666669" width="337" height="40"/>
+                                        <rect key="frame" x="0.0" y="173" width="333" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrm-9e-VdO">
-                                                <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="4" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="fourTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="Pnu-aH-uLF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa4-Sb-KtL">
-                                                <rect key="frame" x="91.666666666666671" y="0.0" width="62.000000000000014" height="40"/>
+                                                <rect key="frame" x="90.666666666666671" y="0.0" width="61.000000000000014" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="5" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="fiveTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="oAU-gl-7oU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGY-1G-auI">
-                                                <rect key="frame" x="183.66666666666666" y="0.0" width="61.666666666666657" height="40"/>
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="60.666666666666657" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="6" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="sixTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="4KB-rf-u9z"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UB-vi-8p0">
-                                                <rect key="frame" x="275.33333333333331" y="0.0" width="61.666666666666686" height="40"/>
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="60.666666666666686" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="-" cornerStyle="capsule">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="minusTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="hX4-MZ-1vr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -438,29 +578,41 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-pi-fDx">
-                                        <rect key="frame" x="0.0" y="251.66666666666669" width="337" height="40"/>
+                                        <rect key="frame" x="0.0" y="228" width="333" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3K-qW-OBb">
-                                                <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="1" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="oneTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="oUO-Fz-xkm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b34-7E-2OB">
-                                                <rect key="frame" x="91.666666666666671" y="0.0" width="62.000000000000014" height="40"/>
+                                                <rect key="frame" x="90.666666666666671" y="0.0" width="61.000000000000014" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="2" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="twoTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="lZT-LV-raS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa3-nR-QG1">
-                                                <rect key="frame" x="183.66666666666666" y="0.0" width="61.666666666666657" height="40"/>
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="60.666666666666657" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="3" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="threeTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="R4o-OW-pGi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzv-P8-5cn">
-                                                <rect key="frame" x="275.33333333333331" y="0.0" width="61.666666666666686" height="40"/>
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="60.666666666666686" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="capsule">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="plusTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="hAU-t2-r1D"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -468,7 +620,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Xbq-Sl-dtN">
-                                        <rect key="frame" x="0.0" y="306.66666666666669" width="337" height="40"/>
+                                        <rect key="frame" x="0.0" y="283" width="333" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdP-db-S9b">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
@@ -479,20 +631,29 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="0" subtitle="" cornerStyle="capsule">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="zeroTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="jaM-z3-Eip"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXY-or-iF1">
-                                                <rect key="frame" x="180" y="0.0" width="63.666666666666657" height="40"/>
+                                                <rect key="frame" x="180" y="0.0" width="61.666666666666657" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="." cornerStyle="capsule">
                                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="decimalTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="7J9-V4-CLD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBa-rJ-Ptm">
-                                                <rect key="frame" x="273.66666666666669" y="0.0" width="63.333333333333314" height="40"/>
+                                                <rect key="frame" x="271.66666666666669" y="0.0" width="61.333333333333314" height="40"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="=" cornerStyle="capsule">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="equalsTapped:" destination="hmD-uo-6ZW" eventType="primaryActionTriggered" id="NgQ-LB-Zdg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -506,15 +667,23 @@
                         <viewLayoutGuide key="safeArea" id="Nrh-AK-yjp"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="Nrh-AK-yjp" firstAttribute="bottom" secondItem="wsZ-cZ-6Nx" secondAttribute="bottom" constant="10" id="b3Z-67-D8w"/>
-                            <constraint firstItem="wsZ-cZ-6Nx" firstAttribute="leading" secondItem="Nrh-AK-yjp" secondAttribute="leading" constant="20" id="ngt-L4-OQ4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wsZ-cZ-6Nx" secondAttribute="trailing" constant="20" id="vmg-L8-mZg"/>
+                            <constraint firstAttribute="trailing" secondItem="ImL-px-xIv" secondAttribute="trailing" constant="10" id="6wX-Je-SVZ"/>
+                            <constraint firstItem="ImL-px-xIv" firstAttribute="leading" secondItem="NON-Ar-NnG" secondAttribute="leading" constant="10" id="N2J-P3-sI5"/>
+                            <constraint firstItem="ImL-px-xIv" firstAttribute="top" secondItem="Nrh-AK-yjp" secondAttribute="top" constant="5" id="azg-ZB-nx5"/>
+                            <constraint firstItem="Nrh-AK-yjp" firstAttribute="bottom" secondItem="wsZ-cZ-6Nx" secondAttribute="bottom" constant="20" id="b3Z-67-D8w"/>
+                            <constraint firstItem="Nrh-AK-yjp" firstAttribute="trailing" secondItem="wsZ-cZ-6Nx" secondAttribute="trailing" constant="30" id="eMU-gD-pOi"/>
+                            <constraint firstItem="wsZ-cZ-6Nx" firstAttribute="leading" secondItem="Nrh-AK-yjp" secondAttribute="leading" constant="30" id="xJL-1b-WFN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="BwI-yI-7H7"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="kl1-Ql-w4j" id="84b-IN-G8P"/>
+                        <outlet property="titleLabel" destination="ImL-px-xIv" id="jWw-Tm-My9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsY-kz-QMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="772"/>
+            <point key="canvasLocation" x="900" y="4"/>
         </scene>
     </scenes>
     <resources>
