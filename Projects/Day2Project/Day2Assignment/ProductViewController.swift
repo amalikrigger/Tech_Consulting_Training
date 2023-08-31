@@ -42,19 +42,14 @@ class ProductViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as? ProductTableViewCell
         let product = products.products[indexPath.row]
-        cell?.idLabel.text = "id: \(String(product.id))"
-        cell?.titleLabel.text = "title: \(product.title)"
-        cell?.descriptionLabel.text = "description: \(product.description)"
-        cell?.priceLabel.text = "price: \(String(product.price))"
-        cell?.discountPercentageLabel.text = "discount percentage: \(String(product.discountPercentage))"
-        cell?.ratingLabel.text = "rating: \(String(product.rating))"
-        cell?.stockLabel.text = "stock: \(String(product.stock))"
-        cell?.brandLabel.text = "brand: \(product.brand)"
-        cell?.categoryLabel.text = "category: \(product.category)"
-        cell?.thumbnailLabel.text = "thumbnail: \(product.thumbnail)"
-        for image in product.images {
-            cell?.imagesLabel.text?.append("\(image) ")
-        }
+        cell?.titleLabel.text = "\(product.title)"
+        cell?.descriptionLabel.text = "\(product.description)"
+        cell?.priceLabel.text = "$\(String(product.price))"
+        cell?.discountLabel.text = "\(String(product.discountPercentage))%"
+        cell?.ratingLabel.text = "\(String(product.rating))"
+        cell?.stockLabel.text = "\(String(product.stock))"
+        cell?.brandLabel.text = "\(product.brand)"
+        cell?.categoryLabel.text = "\(product.category)"
         return cell ?? UITableViewCell()
     }
     
