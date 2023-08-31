@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0450B5262A9F7E08000FACA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450B5252A9F7E08000FACA1 /* AppDelegate.swift */; };
+		0450B5282A9F7E08000FACA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450B5272A9F7E08000FACA1 /* SceneDelegate.swift */; };
+		0450B52A2A9F7E08000FACA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450B5292A9F7E08000FACA1 /* ViewController.swift */; };
+		0450B52D2A9F7E08000FACA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0450B52B2A9F7E08000FACA1 /* Main.storyboard */; };
+		0450B52F2A9F7E10000FACA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0450B52E2A9F7E10000FACA1 /* Assets.xcassets */; };
+		0450B5322A9F7E10000FACA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0450B5302A9F7E10000FACA1 /* LaunchScreen.storyboard */; };
+		0450B53D2A9F7E11000FACA1 /* NetorkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450B53C2A9F7E11000FACA1 /* NetorkingTests.swift */; };
+		0450B5472A9F7E11000FACA1 /* NetorkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450B5462A9F7E11000FACA1 /* NetorkingUITests.swift */; };
+		0450B5492A9F7E11000FACA1 /* NetorkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450B5482A9F7E11000FACA1 /* NetorkingUITestsLaunchTests.swift */; };
+		0450B5562A9F8F62000FACA1 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0450B5552A9F8F62000FACA1 /* Users.json */; };
+		0450B5582A9F933B000FACA1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450B5572A9F933B000FACA1 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0450B5392A9F7E11000FACA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0450B51A2A9F7E07000FACA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0450B5212A9F7E08000FACA1;
+			remoteInfo = Netorking;
+		};
+		0450B5432A9F7E11000FACA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0450B51A2A9F7E07000FACA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0450B5212A9F7E08000FACA1;
+			remoteInfo = Netorking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0450B5222A9F7E08000FACA1 /* Netorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0450B5252A9F7E08000FACA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0450B5272A9F7E08000FACA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0450B5292A9F7E08000FACA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0450B52C2A9F7E08000FACA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0450B52E2A9F7E10000FACA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0450B5312A9F7E10000FACA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0450B5332A9F7E10000FACA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0450B5382A9F7E11000FACA1 /* NetorkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetorkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0450B53C2A9F7E11000FACA1 /* NetorkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetorkingTests.swift; sourceTree = "<group>"; };
+		0450B5422A9F7E11000FACA1 /* NetorkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetorkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0450B5462A9F7E11000FACA1 /* NetorkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetorkingUITests.swift; sourceTree = "<group>"; };
+		0450B5482A9F7E11000FACA1 /* NetorkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetorkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0450B5552A9F8F62000FACA1 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		0450B5572A9F933B000FACA1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0450B51F2A9F7E08000FACA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0450B5352A9F7E11000FACA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0450B53F2A9F7E11000FACA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0450B5192A9F7E07000FACA1 = {
+			isa = PBXGroup;
+			children = (
+				0450B5242A9F7E08000FACA1 /* Netorking */,
+				0450B53B2A9F7E11000FACA1 /* NetorkingTests */,
+				0450B5452A9F7E11000FACA1 /* NetorkingUITests */,
+				0450B5232A9F7E08000FACA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0450B5232A9F7E08000FACA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0450B5222A9F7E08000FACA1 /* Netorking.app */,
+				0450B5382A9F7E11000FACA1 /* NetorkingTests.xctest */,
+				0450B5422A9F7E11000FACA1 /* NetorkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0450B5242A9F7E08000FACA1 /* Netorking */ = {
+			isa = PBXGroup;
+			children = (
+				0450B5252A9F7E08000FACA1 /* AppDelegate.swift */,
+				0450B5272A9F7E08000FACA1 /* SceneDelegate.swift */,
+				0450B5292A9F7E08000FACA1 /* ViewController.swift */,
+				0450B52B2A9F7E08000FACA1 /* Main.storyboard */,
+				0450B52E2A9F7E10000FACA1 /* Assets.xcassets */,
+				0450B5302A9F7E10000FACA1 /* LaunchScreen.storyboard */,
+				0450B5332A9F7E10000FACA1 /* Info.plist */,
+				0450B5552A9F8F62000FACA1 /* Users.json */,
+				0450B5572A9F933B000FACA1 /* User.swift */,
+			);
+			path = Netorking;
+			sourceTree = "<group>";
+		};
+		0450B53B2A9F7E11000FACA1 /* NetorkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				0450B53C2A9F7E11000FACA1 /* NetorkingTests.swift */,
+			);
+			path = NetorkingTests;
+			sourceTree = "<group>";
+		};
+		0450B5452A9F7E11000FACA1 /* NetorkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0450B5462A9F7E11000FACA1 /* NetorkingUITests.swift */,
+				0450B5482A9F7E11000FACA1 /* NetorkingUITestsLaunchTests.swift */,
+			);
+			path = NetorkingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0450B5212A9F7E08000FACA1 /* Netorking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0450B54C2A9F7E11000FACA1 /* Build configuration list for PBXNativeTarget "Netorking" */;
+			buildPhases = (
+				0450B51E2A9F7E08000FACA1 /* Sources */,
+				0450B51F2A9F7E08000FACA1 /* Frameworks */,
+				0450B5202A9F7E08000FACA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Netorking;
+			productName = Netorking;
+			productReference = 0450B5222A9F7E08000FACA1 /* Netorking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0450B5372A9F7E11000FACA1 /* NetorkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0450B54F2A9F7E11000FACA1 /* Build configuration list for PBXNativeTarget "NetorkingTests" */;
+			buildPhases = (
+				0450B5342A9F7E11000FACA1 /* Sources */,
+				0450B5352A9F7E11000FACA1 /* Frameworks */,
+				0450B5362A9F7E11000FACA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0450B53A2A9F7E11000FACA1 /* PBXTargetDependency */,
+			);
+			name = NetorkingTests;
+			productName = NetorkingTests;
+			productReference = 0450B5382A9F7E11000FACA1 /* NetorkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0450B5412A9F7E11000FACA1 /* NetorkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0450B5522A9F7E11000FACA1 /* Build configuration list for PBXNativeTarget "NetorkingUITests" */;
+			buildPhases = (
+				0450B53E2A9F7E11000FACA1 /* Sources */,
+				0450B53F2A9F7E11000FACA1 /* Frameworks */,
+				0450B5402A9F7E11000FACA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0450B5442A9F7E11000FACA1 /* PBXTargetDependency */,
+			);
+			name = NetorkingUITests;
+			productName = NetorkingUITests;
+			productReference = 0450B5422A9F7E11000FACA1 /* NetorkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0450B51A2A9F7E07000FACA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					0450B5212A9F7E08000FACA1 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					0450B5372A9F7E11000FACA1 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 0450B5212A9F7E08000FACA1;
+					};
+					0450B5412A9F7E11000FACA1 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 0450B5212A9F7E08000FACA1;
+					};
+				};
+			};
+			buildConfigurationList = 0450B51D2A9F7E07000FACA1 /* Build configuration list for PBXProject "Netorking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0450B5192A9F7E07000FACA1;
+			productRefGroup = 0450B5232A9F7E08000FACA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0450B5212A9F7E08000FACA1 /* Netorking */,
+				0450B5372A9F7E11000FACA1 /* NetorkingTests */,
+				0450B5412A9F7E11000FACA1 /* NetorkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0450B5202A9F7E08000FACA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0450B5562A9F8F62000FACA1 /* Users.json in Resources */,
+				0450B5322A9F7E10000FACA1 /* LaunchScreen.storyboard in Resources */,
+				0450B52F2A9F7E10000FACA1 /* Assets.xcassets in Resources */,
+				0450B52D2A9F7E08000FACA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0450B5362A9F7E11000FACA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0450B5402A9F7E11000FACA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0450B51E2A9F7E08000FACA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0450B5582A9F933B000FACA1 /* User.swift in Sources */,
+				0450B52A2A9F7E08000FACA1 /* ViewController.swift in Sources */,
+				0450B5262A9F7E08000FACA1 /* AppDelegate.swift in Sources */,
+				0450B5282A9F7E08000FACA1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0450B5342A9F7E11000FACA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0450B53D2A9F7E11000FACA1 /* NetorkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0450B53E2A9F7E11000FACA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0450B5492A9F7E11000FACA1 /* NetorkingUITestsLaunchTests.swift in Sources */,
+				0450B5472A9F7E11000FACA1 /* NetorkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0450B53A2A9F7E11000FACA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0450B5212A9F7E08000FACA1 /* Netorking */;
+			targetProxy = 0450B5392A9F7E11000FACA1 /* PBXContainerItemProxy */;
+		};
+		0450B5442A9F7E11000FACA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0450B5212A9F7E08000FACA1 /* Netorking */;
+			targetProxy = 0450B5432A9F7E11000FACA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0450B52B2A9F7E08000FACA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0450B52C2A9F7E08000FACA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0450B5302A9F7E10000FACA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0450B5312A9F7E10000FACA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0450B54A2A9F7E11000FACA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0450B54B2A9F7E11000FACA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0450B54D2A9F7E11000FACA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Netorking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.juan.Netorking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0450B54E2A9F7E11000FACA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Netorking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.juan.Netorking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0450B5502A9F7E11000FACA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.juan.NetorkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netorking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Netorking";
+			};
+			name = Debug;
+		};
+		0450B5512A9F7E11000FACA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.juan.NetorkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netorking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Netorking";
+			};
+			name = Release;
+		};
+		0450B5532A9F7E11000FACA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.juan.NetorkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Netorking;
+			};
+			name = Debug;
+		};
+		0450B5542A9F7E11000FACA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.juan.NetorkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Netorking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0450B51D2A9F7E07000FACA1 /* Build configuration list for PBXProject "Netorking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0450B54A2A9F7E11000FACA1 /* Debug */,
+				0450B54B2A9F7E11000FACA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0450B54C2A9F7E11000FACA1 /* Build configuration list for PBXNativeTarget "Netorking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0450B54D2A9F7E11000FACA1 /* Debug */,
+				0450B54E2A9F7E11000FACA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0450B54F2A9F7E11000FACA1 /* Build configuration list for PBXNativeTarget "NetorkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0450B5502A9F7E11000FACA1 /* Debug */,
+				0450B5512A9F7E11000FACA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0450B5522A9F7E11000FACA1 /* Build configuration list for PBXNativeTarget "NetorkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0450B5532A9F7E11000FACA1 /* Debug */,
+				0450B5542A9F7E11000FACA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0450B51A2A9F7E07000FACA1 /* Project object */;
+}

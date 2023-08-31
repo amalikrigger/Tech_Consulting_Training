@@ -11,6 +11,10 @@
 		CA358A282A98647700C17BC7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA358A272A98647700C17BC7 /* CalculatorViewController.swift */; };
 		CA8B3B2F2A9F709100783AD9 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B2E2A9F709100783AD9 /* StudentTableViewController.swift */; };
 		CA8B3B312A9F77FA00783AD9 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B302A9F77FA00783AD9 /* StudentTableViewCell.swift */; };
+		CA8B3B332A9FAC5900783AD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B322A9FAC5900783AD9 /* HomeViewController.swift */; };
+		CA8B3B352A9FBA2400783AD9 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B342A9FBA2400783AD9 /* ProductViewController.swift */; };
+		CA8B3B372A9FC30100783AD9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B362A9FC30100783AD9 /* ProductTableViewCell.swift */; };
+		CA8B3B3B2A9FCE6A00783AD9 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = CA8B3B3A2A9FCA9900783AD9 /* Products.json */; };
 		CAF3CCBC2A97DEDB00C6512B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3CCBB2A97DEDB00C6512B /* AppDelegate.swift */; };
 		CAF3CCBE2A97DEDB00C6512B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3CCBD2A97DEDB00C6512B /* SceneDelegate.swift */; };
 		CAF3CCC02A97DEDB00C6512B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3CCBF2A97DEDB00C6512B /* ViewController.swift */; };
@@ -44,6 +48,10 @@
 		CA358A272A98647700C17BC7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		CA8B3B2E2A9F709100783AD9 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 		CA8B3B302A9F77FA00783AD9 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		CA8B3B322A9FAC5900783AD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA8B3B342A9FBA2400783AD9 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		CA8B3B362A9FC30100783AD9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		CA8B3B3A2A9FCA9900783AD9 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		CAF3CCB82A97DEDB00C6512B /* Day2Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day2Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF3CCBB2A97DEDB00C6512B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF3CCBD2A97DEDB00C6512B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,10 +122,14 @@
 				CA29149E2A9CE690004DB475 /* LoginViewController.swift */,
 				CA8B3B2E2A9F709100783AD9 /* StudentTableViewController.swift */,
 				CA8B3B302A9F77FA00783AD9 /* StudentTableViewCell.swift */,
+				CA8B3B322A9FAC5900783AD9 /* HomeViewController.swift */,
+				CA8B3B342A9FBA2400783AD9 /* ProductViewController.swift */,
+				CA8B3B362A9FC30100783AD9 /* ProductTableViewCell.swift */,
 				CAF3CCC12A97DEDB00C6512B /* Main.storyboard */,
 				CAF3CCC42A97DEDC00C6512B /* Assets.xcassets */,
 				CAF3CCC62A97DEDC00C6512B /* LaunchScreen.storyboard */,
 				CAF3CCC92A97DEDC00C6512B /* Info.plist */,
+				CA8B3B3A2A9FCA9900783AD9 /* Products.json */,
 			);
 			path = Day2Assignment;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF3CCC82A97DEDC00C6512B /* LaunchScreen.storyboard in Resources */,
+				CA8B3B3B2A9FCE6A00783AD9 /* Products.json in Resources */,
 				CAF3CCC52A97DEDC00C6512B /* Assets.xcassets in Resources */,
 				CAF3CCC32A97DEDB00C6512B /* Main.storyboard in Resources */,
 			);
@@ -273,8 +286,11 @@
 				CAF3CCC02A97DEDB00C6512B /* ViewController.swift in Sources */,
 				CAF3CCBC2A97DEDB00C6512B /* AppDelegate.swift in Sources */,
 				CA8B3B2F2A9F709100783AD9 /* StudentTableViewController.swift in Sources */,
+				CA8B3B332A9FAC5900783AD9 /* HomeViewController.swift in Sources */,
 				CA358A282A98647700C17BC7 /* CalculatorViewController.swift in Sources */,
 				CA8B3B312A9F77FA00783AD9 /* StudentTableViewCell.swift in Sources */,
+				CA8B3B352A9FBA2400783AD9 /* ProductViewController.swift in Sources */,
+				CA8B3B372A9FC30100783AD9 /* ProductTableViewCell.swift in Sources */,
 				CA29149F2A9CE690004DB475 /* LoginViewController.swift in Sources */,
 				CAF3CCBE2A97DEDB00C6512B /* SceneDelegate.swift in Sources */,
 			);

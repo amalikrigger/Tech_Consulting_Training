@@ -8,7 +8,6 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
 
     var username = ""
@@ -26,7 +25,6 @@ class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "Start Calculating \(username.capitalized) :)"
         numberLabel.text = "0"
     }
     @IBAction func zeroTapped(_ sender: Any) {
@@ -135,10 +133,12 @@ class CalculatorViewController: UIViewController {
             operation = nil
             tempNumber = "0"
         case .Divide:
-            let answer = firstNumber / secondNumber
-            numberLabel.text = String(answer)
-            operation = nil
-            tempNumber = "0"
+            if (secondNumber != 0) {
+                let answer = firstNumber / secondNumber
+                numberLabel.text = String(answer)
+                operation = nil
+                tempNumber = "0"
+            }
         case nil:
             print("Operation is nil")
         }

@@ -28,9 +28,7 @@ class LoginViewController: UIViewController {
         }
         
         if (username == "amali" && password == "admin") {
-            print(username)
-            print(password)
-            self.performSegue(withIdentifier: "navigateToCalculator", sender: nil)
+            self.performSegue(withIdentifier: "navigateToHome", sender: nil)
         } else {
             print("Failure")
         }
@@ -38,11 +36,9 @@ class LoginViewController: UIViewController {
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let calculatorController = segue.destination as? CalculatorViewController
-        
-        calculatorController?.username = usernameTextField.text ?? ""
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+         let homeController = segue.destination as? HomeViewController
+
+        homeController?.username = usernameTextField.text ?? ""
     }
     
 
