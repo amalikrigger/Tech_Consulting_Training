@@ -46,7 +46,7 @@ class Questions {
     var questionsList: [Question] = [
         Question(
             question: "What is app life cycle methods?",
-            answer: "App Life Cycle methods are predefined methods in the AppDelegate class that allow you to respond to various events and states that occur during the lifetime of the application.\n\ndidFinishLaunchingWithOptions: This is called when the app is launched and finished initialization. It gives you a chance to provide initial launch options to setup your app.\n\nsceneWillEnterForeground: This is called right before the app is about to transition from the background to the foreground.\n\nsceneDidBecomeActive: This is called when the app becomes active after being in the background.\n\nsceneWillResignActive: This is called when the app is about to become inactive. This is a good place to stop ongoing tasks\n\nsceneDidEnterBackground: This is triggered when the app is about to enter the background state."
+            answer: "App Life Cycle methods are predefined methods in the AppDelegate class that allow you to respond to various events and states that occur during the lifetime of the application.\n\ndidFinishLaunchingWithOptions: This is called when the app is launched and finished initialization. It gives you a chance to provide initial launch options to setup your app.\n\nsceneWillEnterForeground: This is called right before the app is about to transition from the background to the foreground.\n\nsceneDidBecomeActive: This is called when the app becomes active after being in the background.\n\nsceneWillResignActive: This is called when the app is about to become inactive. This is a good place to stop ongoing tasks.\n\nsceneDidEnterBackground: This is triggered when the app is about to enter the background state."
         ),
         Question(
             question: "What is view controller life cycle methods?",
@@ -62,7 +62,7 @@ class Questions {
         ),
         Question(
             question: "Diff b/w try, try? and try!",
-            answer: "They are used in error handling to handle errors differently. The try method is used when you call a method that can potentially throw an error. The try? keyword is used when you want to call a function or method that can throw an error, but you're willing to accept the error and convert it to an optional value. The try! keyword is used when you're absolutely certain that a function or method call will not throw an error at runtime. It's a way of forcefully unwrapping the result of the function as if it can never be nil or result in an error."
+            answer: "They are used in error handling to handle errors differently.\n\nThe try method is used when you call a method that can potentially throw an error.\n\nThe try? keyword is used when you want to call a function or method that can throw an error, but you're willing to accept the error and convert it to an optional value.\n\nThe try! keyword is used when you're absolutely certain that a function or method call will not throw an error at runtime. It's a way of forcefully unwrapping the result of the function as if it can never be nil or result in an error."
         ),
         Question(
             question: "Different type of inheritance",
@@ -74,7 +74,7 @@ class Questions {
         ),
         Question(
             question: "Diff b/w Struct and Classes",
-            answer: "Structs are value types and Classes are reference types. By efaualt Structs are immutable and classes are mutable. Classes support inheritance and Structs don't. Memory for Structs are managed in the stack and memory in the Classes are managed on the heap. Structs automatically initialize and Classes don't. When passing a Struct to a new variable or pass it as a parameter, a new copy of the instance is created. For a Class you pass a reference to the same instance. Structs are generally more memory efficient because of their copy on assignment behavior and stack memory based allocation. Classes have a slightly higher memory overhead due to refernece tracking and heap based memory allocation."
+            answer: "Structs are value types and Classes are reference types. By default Structs are immutable and classes are mutable. Classes support inheritance and Structs don't. Memory for Structs are managed in the stack and memory in the Classes are managed on the heap. Structs automatically initialize and Classes don't. When passing a Struct to a new variable or as a parameter, a new copy of the instance is created. For a Class you pass a reference to the same instance. Structs are generally more memory efficient because of their copy on assignment behavior and stack memory based allocation. Classes have a slightly higher memory overhead due to reference tracking and heap based memory allocation."
         )
     ]
     
