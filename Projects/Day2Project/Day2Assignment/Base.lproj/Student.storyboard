@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SRN-ew-jtt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Students-->
+        <scene sceneID="3ss-6z-6Kv">
+            <objects>
+                <viewController id="SRN-ew-jtt" customClass="StudentTableViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YEn-Q6-WxY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g78-iV-0Ot">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="sDb-Rv-aVN" customClass="StudentTableViewCell" customModule="Day2Assignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sDb-Rv-aVN" id="Cmz-fS-Ewl">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A2m-Cg-GKw" userLabel="avatar">
+                                                    <rect key="frame" x="20" y="25" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="W8M-Ej-hUw"/>
+                                                        <constraint firstAttribute="height" constant="100" id="g7e-mk-6ZZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGg-1S-l4H" userLabel="name">
+                                                    <rect key="frame" x="170" y="25" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnn-Xw-jf5" userLabel="email">
+                                                    <rect key="frame" x="170" y="64.666666666666671" width="41" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq1-X6-Twx" userLabel="dob">
+                                                    <rect key="frame" x="170" y="104" width="36" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aq1-X6-Twx" firstAttribute="leading" secondItem="A2m-Cg-GKw" secondAttribute="trailing" constant="50" id="8Zk-WA-bWM"/>
+                                                <constraint firstItem="aq1-X6-Twx" firstAttribute="bottom" secondItem="A2m-Cg-GKw" secondAttribute="bottom" id="B7m-lM-141"/>
+                                                <constraint firstItem="HGg-1S-l4H" firstAttribute="top" secondItem="A2m-Cg-GKw" secondAttribute="top" id="Gh2-Lo-TsU"/>
+                                                <constraint firstItem="fnn-Xw-jf5" firstAttribute="leading" secondItem="A2m-Cg-GKw" secondAttribute="trailing" constant="50" id="R5R-Vx-ozw"/>
+                                                <constraint firstItem="A2m-Cg-GKw" firstAttribute="leading" secondItem="Cmz-fS-Ewl" secondAttribute="leading" constant="20" id="U9d-vM-Pxc"/>
+                                                <constraint firstItem="fnn-Xw-jf5" firstAttribute="centerY" secondItem="A2m-Cg-GKw" secondAttribute="centerY" id="Uq6-xI-AcG"/>
+                                                <constraint firstItem="HGg-1S-l4H" firstAttribute="leading" secondItem="A2m-Cg-GKw" secondAttribute="trailing" constant="50" id="WOj-6U-rGC"/>
+                                                <constraint firstItem="A2m-Cg-GKw" firstAttribute="centerY" secondItem="Cmz-fS-Ewl" secondAttribute="centerY" id="mbY-OK-ZAo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dobLabel" destination="aq1-X6-Twx" id="Xy1-jv-7EM"/>
+                                            <outlet property="emailLabel" destination="fnn-Xw-jf5" id="jm4-I6-5PR"/>
+                                            <outlet property="nameLabel" destination="HGg-1S-l4H" id="09g-rm-3ju"/>
+                                            <outlet property="studentImage" destination="A2m-Cg-GKw" id="azc-hb-Cpk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dPf-Zf-zNo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dPf-Zf-zNo" firstAttribute="bottom" secondItem="g78-iV-0Ot" secondAttribute="bottom" id="8cz-P8-vL9"/>
+                            <constraint firstItem="g78-iV-0Ot" firstAttribute="top" secondItem="dPf-Zf-zNo" secondAttribute="top" id="FRm-z7-cSQ"/>
+                            <constraint firstItem="dPf-Zf-zNo" firstAttribute="trailing" secondItem="g78-iV-0Ot" secondAttribute="trailing" id="QFr-7y-snv"/>
+                            <constraint firstItem="g78-iV-0Ot" firstAttribute="leading" secondItem="dPf-Zf-zNo" secondAttribute="leading" id="SVp-Wd-sKG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Students" image="graduationcap" catalog="system" id="Y1F-IJ-aPL"/>
+                    <connections>
+                        <outlet property="tableView" destination="g78-iV-0Ot" id="TGP-hq-Qzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nn-Xs-1MF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346" y="479"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="graduationcap" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

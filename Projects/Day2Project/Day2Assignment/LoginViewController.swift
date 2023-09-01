@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
         if (username == "amali" && password == "admin") {
             self.performSegue(withIdentifier: "navigateToHome", sender: nil)
         } else {
+            self.performSegue(withIdentifier: "navigateToHome", sender: nil)
             print("Failure")
         }
     }

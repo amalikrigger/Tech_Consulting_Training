@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
-    
+    @IBOutlet weak var settingsButton: UIButton!
     var username = ""
 
     override func viewDidLoad() {
@@ -20,7 +20,10 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func settingsButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "navigateToSettings", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
