@@ -24,19 +24,19 @@ class CountryViewController: UIViewController, UITableViewDataSource, UISearchBa
         countryTableView.dataSource = self
         self.countrySearchBar.delegate = self
 //        networkManager.delegate = self
-        networkManager.getCountries {countries, error in
-            
-            guard let countries = countries else {
-                DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-                return
-            }
-            self.countries = countries
-            DispatchQueue.main.async {
-                self.countryTableView.reloadData()
+        networkManager.getCountries { result in
+            switch result {
+                case .success(let countries):
+                    self.countries = countries
+                    DispatchQueue.main.async {
+                        self.countryTableView.reloadData()
+                    }
+                case .failure(let error):
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
             }
         }
     }

@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkManager {
     var delegate: NetworkManagerActions?
-    func getCountries(completionHandler:@escaping ([Country]?, Error?) -> Void) {
+    func getCountries(completionHandler:@escaping (Result<[Country], Error>) -> Void) {
         guard let url = URL(string:"https://gist.githubusercontent.com/peymano-wmt/32dcb892b06648910ddd40406e37fdab/raw/db25946fd77c5873b0303b858e861ce724e0dcd0/countries.json") else { return }
         
 //        guard let url = URL(string:"https://gist.githubusercontent/peymano-wmt/32dcb892b06648910ddd40406e37fdab/raw/db25946fd77c5873b0303b858e861ce724e0dcd0/countries.json") else { return }
@@ -23,7 +23,7 @@ class NetworkManager {
             print(error ?? "Error not available")
             print(data ?? "Data not available")
             guard let data = data, error == nil else {
-                return completionHandler(nil, error)
+                return completionHandler(.failure(error!))
             }
             
             let decoder = JSONDecoder()
@@ -31,7 +31,7 @@ class NetworkManager {
             do {
                 let countries =  try decoder.decode([Country].self, from: data)
                 print(countries)
-                completionHandler(countries, nil)
+                completionHandler(.success(countries))
             } catch {
                 print(error.localizedDescription)
             }
