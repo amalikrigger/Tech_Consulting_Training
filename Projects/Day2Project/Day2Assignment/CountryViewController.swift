@@ -11,14 +11,18 @@ protocol NetworkManagerActions {
     func refresh(countries: [Country])
 }
 
-class CountryViewController: UIViewController, UITableViewDataSource {
+class CountryViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
 //class CountryViewController: UIViewController, UITableViewDataSource, NetworkManagerActions {
+    @IBOutlet weak var countrySearchBar: UISearchBar!
     @IBOutlet weak var countryTableView: UITableView!
     private var countries: [Country] = []
+    private var searchedCountries: [Country] = []
+    var searching = false
     private let networkManager = NetworkManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         countryTableView.dataSource = self
+        self.countrySearchBar.delegate = self
 //        networkManager.delegate = self
         networkManager.getCountries {countries, error in
             
@@ -42,24 +46,51 @@ class CountryViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Count: " + countries.count.formatted())
-        return countries.count
+        if searching {
+            return searchedCountries.count
+        } else {
+            return countries.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let countryCell = tableView.dequeueReusableCell(withIdentifier: "countryCell") as? CountryTableViewCell
         
-        countryCell?.countryNameLabel.text = countries[indexPath.row].name
-        countryCell?.capitalLabel.text = countries[indexPath.row].capital
-        countryCell?.regionLabel.text = countries[indexPath.row].region
-        countryCell?.countryCodeLabel.text = countries[indexPath.row].code
-        
+        if searching {
+            countryCell?.countryNameLabel.text = searchedCountries[indexPath.row].name
+            countryCell?.capitalLabel.text = searchedCountries[indexPath.row].capital
+            countryCell?.regionLabel.text = searchedCountries[indexPath.row].region
+            countryCell?.countryCodeLabel.text = searchedCountries[indexPath.row].code
+        } else {
+            countryCell?.countryNameLabel.text = countries[indexPath.row].name
+            countryCell?.capitalLabel.text = countries[indexPath.row].capital
+            countryCell?.regionLabel.text = countries[indexPath.row].region
+            countryCell?.countryCodeLabel.text = countries[indexPath.row].code
+        }
+
         return countryCell ?? UITableViewCell()
     }
     
     func refresh(countries: [Country]) {
         self.countries = countries
         
+        DispatchQueue.main.async {
+            self.countryTableView.reloadData()
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchedCountries = countries.filter { $0.name.lowercased().prefix(searchText.count) == searchText.lowercased()
+        }
+        searching = true
+        DispatchQueue.main.async {
+            self.countryTableView.reloadData()
+        }
+    }
+        
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching = false
+        searchBar.text = ""
         DispatchQueue.main.async {
             self.countryTableView.reloadData()
         }

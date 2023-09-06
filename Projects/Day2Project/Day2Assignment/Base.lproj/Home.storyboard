@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="QHo-De-py5">
             <objects>
                 <viewController id="j0L-PU-pp9" customClass="HomeViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,9 +41,7 @@
                             <constraint firstItem="xeG-ga-8Ad" firstAttribute="top" secondItem="FyJ-23-v78" secondAttribute="top" id="r8j-db-Pi9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" id="lyi-bb-iXV">
-                        <color key="badgeColor" systemColor="systemIndigoColor"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="lyi-bb-iXV"/>
                     <navigationItem key="navigationItem" style="editor" id="eWD-1P-802"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

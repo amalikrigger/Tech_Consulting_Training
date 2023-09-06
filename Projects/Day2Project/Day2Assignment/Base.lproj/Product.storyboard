@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Product-->
         <scene sceneID="pYZ-nM-tlK">
             <objects>
                 <viewController id="CgE-TN-Az0" customClass="ProductViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-uJ-NJg">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="69" width="393" height="700"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" id="lSd-5v-bfa" customClass="ProductTableViewCell" customModule="Day2Assignment" customModuleProvider="target">
@@ -199,15 +199,13 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Egc-gO-DaV"/>
                         <constraints>
-                            <constraint firstItem="c5D-uJ-NJg" firstAttribute="top" secondItem="Egc-gO-DaV" secondAttribute="top" id="3S6-72-cb1"/>
+                            <constraint firstItem="c5D-uJ-NJg" firstAttribute="top" secondItem="Egc-gO-DaV" secondAttribute="top" constant="10" id="3S6-72-cb1"/>
                             <constraint firstItem="c5D-uJ-NJg" firstAttribute="trailing" secondItem="Egc-gO-DaV" secondAttribute="trailing" id="dn6-Uu-dAw"/>
                             <constraint firstItem="c5D-uJ-NJg" firstAttribute="leading" secondItem="Egc-gO-DaV" secondAttribute="leading" id="qYZ-21-vN0"/>
                             <constraint firstItem="Egc-gO-DaV" firstAttribute="bottom" secondItem="c5D-uJ-NJg" secondAttribute="bottom" id="xbr-wo-uMf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="cart.fill" catalog="system" id="ai5-xo-SZz">
-                        <color key="badgeColor" systemColor="systemIndigoColor"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Product" image="cart.fill" catalog="system" id="ai5-xo-SZz"/>
                     <navigationItem key="navigationItem" id="iCb-ln-VSU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -228,9 +226,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

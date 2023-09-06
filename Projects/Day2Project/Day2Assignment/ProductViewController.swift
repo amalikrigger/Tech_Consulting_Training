@@ -51,9 +51,9 @@ class ProductViewController: UIViewController, UITableViewDataSource {
         cell?.brandLabel.text = "\(product.brand)"
         cell?.categoryLabel.text = "\(product.category)"
         let url = URL(string: "\(product.thumbnail)")!
-        if let data = try? Data(contentsOf: url) {
-            cell?.thumbnailImage.image = UIImage(data: data)
-        }
+//        if let data = try? Data(contentsOf: url) {
+//            cell?.thumbnailImage.image = UIImage(data: data)
+//        }
         return cell ?? UITableViewCell()
     }
     

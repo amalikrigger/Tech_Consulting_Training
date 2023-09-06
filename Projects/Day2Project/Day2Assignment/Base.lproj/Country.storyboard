@@ -16,8 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search country" translatesAutoresizingMaskIntoConstraints="NO" id="M7K-dN-nfY">
+                                <rect key="frame" x="0.0" y="69" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UOz-di-Brj" id="zYv-Sc-Vbu"/>
+                                </connections>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PJB-QW-cZj">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="125" width="393" height="693"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" id="kut-aI-jmm" customClass="CountryTableViewCell" customModule="Day2Assignment" customModuleProvider="target">
@@ -86,22 +93,26 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rFJ-Un-QcN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="M7K-dN-nfY" firstAttribute="trailing" secondItem="rFJ-Un-QcN" secondAttribute="trailing" id="2jh-Od-dGu"/>
+                            <constraint firstItem="PJB-QW-cZj" firstAttribute="top" secondItem="M7K-dN-nfY" secondAttribute="bottom" id="O1v-QP-4xY"/>
                             <constraint firstItem="PJB-QW-cZj" firstAttribute="leading" secondItem="rFJ-Un-QcN" secondAttribute="leading" id="dnI-tV-WQL"/>
-                            <constraint firstItem="PJB-QW-cZj" firstAttribute="top" secondItem="rFJ-Un-QcN" secondAttribute="top" id="lmr-FE-Pcm"/>
+                            <constraint firstItem="M7K-dN-nfY" firstAttribute="leading" secondItem="rFJ-Un-QcN" secondAttribute="leading" id="g3q-VN-Ljq"/>
+                            <constraint firstItem="M7K-dN-nfY" firstAttribute="top" secondItem="rFJ-Un-QcN" secondAttribute="top" constant="10" id="jOj-bR-KkK"/>
                             <constraint firstItem="rFJ-Un-QcN" firstAttribute="trailing" secondItem="PJB-QW-cZj" secondAttribute="trailing" id="om1-ff-aKy"/>
                             <constraint firstItem="rFJ-Un-QcN" firstAttribute="bottom" secondItem="PJB-QW-cZj" secondAttribute="bottom" id="ujx-PT-olI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Country" image="location.fill" catalog="system" id="RZg-ps-1Pd"/>
                     <connections>
+                        <outlet property="countrySearchBar" destination="M7K-dN-nfY" id="yXX-M2-znr"/>
                         <outlet property="countryTableView" destination="PJB-QW-cZj" id="BwJ-5l-mBd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxv-K3-ycW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3190" y="-210"/>
+            <point key="canvasLocation" x="3188.5496183206105" y="-210.56338028169014"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

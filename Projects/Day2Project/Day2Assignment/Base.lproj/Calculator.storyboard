@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Calculator-->
         <scene sceneID="Gyg-YY-HGm">
             <objects>
                 <viewController id="hmD-uo-6ZW" customClass="CalculatorViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -277,9 +277,7 @@
                             <constraint firstItem="wsZ-cZ-6Nx" firstAttribute="leading" secondItem="Nrh-AK-yjp" secondAttribute="leading" constant="30" id="xJL-1b-WFN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="square.and.arrow.down" catalog="system" id="CJB-ik-MXk">
-                        <color key="badgeColor" systemColor="systemIndigoColor"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="number.square.fill" catalog="system" id="CJB-ik-MXk"/>
                     <navigationItem key="navigationItem" id="BwI-yI-7H7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -293,7 +291,7 @@
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="number.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

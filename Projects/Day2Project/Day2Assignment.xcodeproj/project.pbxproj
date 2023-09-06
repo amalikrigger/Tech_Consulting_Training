@@ -157,12 +157,12 @@
 				CA2F08692AA230E600CD85EA /* CountryViewController.swift */,
 				CA2F086B2AA2316800CD85EA /* CountryTableViewCell.swift */,
 				CAF84D932AA82E3F00402085 /* Country.swift */,
+				CAF84D952AA82E9F00402085 /* NetworkManager.swift */,
 				CAF3CCC12A97DEDB00C6512B /* Main.storyboard */,
 				CAF3CCC42A97DEDC00C6512B /* Assets.xcassets */,
 				CAF3CCC62A97DEDC00C6512B /* LaunchScreen.storyboard */,
 				CAF3CCC92A97DEDC00C6512B /* Info.plist */,
 				CA8B3B3A2A9FCA9900783AD9 /* Products.json */,
-				CAF84D952AA82E9F00402085 /* NetworkManager.swift */,
 			);
 			path = Day2Assignment;
 			sourceTree = "<group>";
