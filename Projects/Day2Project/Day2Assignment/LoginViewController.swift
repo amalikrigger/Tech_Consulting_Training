@@ -31,13 +31,14 @@ class LoginViewController: UIViewController {
             self.performSegue(withIdentifier: "navigateToHome", sender: nil)
         } else {
             self.performSegue(withIdentifier: "navigateToHome", sender: nil)
-            print("Failure")
+            print("Login Failed or Skipped")
         }
     }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         let homeController = segue.destination as? HomeViewController
+        let uiTabBarController = segue.destination as? UITabBarController
+        let homeController = uiTabBarController?.viewControllers?.first as? HomeViewController
 
         homeController?.username = usernameTextField.text ?? ""
     }

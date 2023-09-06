@@ -366,12 +366,12 @@
                         <segue destination="Zp3-nK-f8e" kind="relationship" relationship="viewControllers" id="BZH-XM-dDt"/>
                         <segue destination="Z99-XL-XEL" kind="relationship" relationship="viewControllers" id="BOL-lR-g3f"/>
                         <segue destination="huE-WU-QUh" kind="relationship" relationship="viewControllers" id="tyL-Ag-QVC"/>
-                        <segue destination="UOz-di-Brj" kind="relationship" relationship="viewControllers" id="22a-yz-xsV"/>
+                        <segue destination="mAZ-aS-uSy" kind="relationship" relationship="viewControllers" id="22a-yz-xsV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPW-mN-Jeo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2042" y="-309"/>
+            <point key="canvasLocation" x="2266" y="-331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Erb-eR-TK7">
@@ -404,7 +404,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bkX-kO-a5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2695" y="-309"/>
+            <point key="canvasLocation" x="2693" y="-360"/>
         </scene>
         <!--Student-->
         <scene sceneID="Hmb-ao-KUr">
@@ -414,7 +414,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axu-SC-4ZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2695" y="-251"/>
+            <point key="canvasLocation" x="2694" y="-309"/>
         </scene>
         <!--Calculator-->
         <scene sceneID="FcU-5R-51g">
@@ -424,102 +424,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Kf-vW-xgj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2706" y="-192"/>
-        </scene>
-        <!--Country-->
-        <scene sceneID="0vd-gh-PqB">
-            <objects>
-                <viewController id="UOz-di-Brj" customClass="CountryViewController" customModule="Day2Assignment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6VL-At-jQP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PJB-QW-cZj">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" id="kut-aI-jmm" customClass="CountryTableViewCell" customModule="Day2Assignment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kut-aI-jmm" id="Snw-oP-6sg">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ALZ-qA-7Ma">
-                                                    <rect key="frame" x="20" y="0.0" width="94" height="60"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afghanistan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i7-97-Kmk">
-                                                            <rect key="frame" x="0.0" y="0.0" width="94" height="30"/>
-                                                            <accessibility key="accessibilityConfiguration" label="countryName"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kabul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUX-UA-FEF">
-                                                            <rect key="frame" x="0.0" y="30" width="94" height="30"/>
-                                                            <accessibility key="accessibilityConfiguration" label="capital"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xt9-x6-6Cz">
-                                                    <rect key="frame" x="328" y="5" width="45" height="55"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfE-Gz-3nI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="19.333333333333332"/>
-                                                            <accessibility key="accessibilityConfiguration" label="region"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gx-3H-Rq4">
-                                                            <rect key="frame" x="25.666666666666686" y="0.0" width="19.333333333333329" height="19.333333333333332"/>
-                                                            <accessibility key="accessibilityConfiguration" label="countryCode"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="xt9-x6-6Cz" secondAttribute="trailing" constant="20" id="91Y-oe-qKy"/>
-                                                <constraint firstAttribute="bottom" secondItem="ALZ-qA-7Ma" secondAttribute="bottom" id="D2g-LI-Vbq"/>
-                                                <constraint firstAttribute="bottom" secondItem="xt9-x6-6Cz" secondAttribute="bottom" id="NA6-ta-k1H"/>
-                                                <constraint firstItem="ALZ-qA-7Ma" firstAttribute="leading" secondItem="Snw-oP-6sg" secondAttribute="leading" constant="20" id="OeY-ej-xal"/>
-                                                <constraint firstItem="ALZ-qA-7Ma" firstAttribute="top" secondItem="Snw-oP-6sg" secondAttribute="top" id="ofy-0m-kDw"/>
-                                                <constraint firstItem="xt9-x6-6Cz" firstAttribute="top" secondItem="Snw-oP-6sg" secondAttribute="top" constant="5" id="ojL-rP-NW7"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="capitalLabel" destination="mUX-UA-FEF" id="3pp-8W-VqF"/>
-                                            <outlet property="countryCodeLabel" destination="4gx-3H-Rq4" id="V1T-Iy-rQG"/>
-                                            <outlet property="countryNameLabel" destination="9i7-97-Kmk" id="boR-rT-orh"/>
-                                            <outlet property="regionLabel" destination="qfE-Gz-3nI" id="t9y-oY-Nyr"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="rFJ-Un-QcN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="PJB-QW-cZj" firstAttribute="leading" secondItem="rFJ-Un-QcN" secondAttribute="leading" id="dnI-tV-WQL"/>
-                            <constraint firstItem="PJB-QW-cZj" firstAttribute="top" secondItem="rFJ-Un-QcN" secondAttribute="top" id="lmr-FE-Pcm"/>
-                            <constraint firstItem="rFJ-Un-QcN" firstAttribute="trailing" secondItem="PJB-QW-cZj" secondAttribute="trailing" id="om1-ff-aKy"/>
-                            <constraint firstItem="rFJ-Un-QcN" firstAttribute="bottom" secondItem="PJB-QW-cZj" secondAttribute="bottom" id="ujx-PT-olI"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Country" image="location.fill" catalog="system" id="RZg-ps-1Pd"/>
-                    <connections>
-                        <outlet property="countryTableView" destination="PJB-QW-cZj" id="BwJ-5l-mBd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hxv-K3-ycW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3190" y="-210"/>
+            <point key="canvasLocation" x="2705" y="-257"/>
         </scene>
         <!--Home-->
         <scene sceneID="uDm-lp-BB3">
@@ -529,14 +434,23 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XdY-H2-MQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="-373"/>
+            <point key="canvasLocation" x="2684" y="-411"/>
+        </scene>
+        <!--Country-->
+        <scene sceneID="jBD-KS-1VN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Country" id="mAZ-aS-uSy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pEM-XQ-J2G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bt6-g1-CwV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694" y="-199"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="background1" width="3333" height="5000"/>
         <image name="background2" width="3334" height="5001"/>
-        <image name="location.fill" catalog="system" width="128" height="119"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

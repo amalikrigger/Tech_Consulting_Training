@@ -7,13 +7,34 @@
 
 import UIKit
 
+protocol NetworkManagerActions {
+    func refresh(countries: [Country])
+}
+
 class CountryViewController: UIViewController, UITableViewDataSource {
+//class CountryViewController: UIViewController, UITableViewDataSource, NetworkManagerActions {
     @IBOutlet weak var countryTableView: UITableView!
-    var countries:[Country] = []
+    private var countries: [Country] = []
+    private let networkManager = NetworkManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         countryTableView.dataSource = self
-        getCountries()
+//        networkManager.delegate = self
+        networkManager.getCountries {countries, error in
+            
+            guard let countries = countries else {
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+                return
+            }
+            self.countries = countries
+            DispatchQueue.main.async {
+                self.countryTableView.reloadData()
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,36 +57,13 @@ class CountryViewController: UIViewController, UITableViewDataSource {
         return countryCell ?? UITableViewCell()
     }
     
-    func getCountries() {
-        guard let url = URL(string:"https://gist.githubusercontent.com/peymano-wmt/32dcb892b06648910ddd40406e37fdab/raw/db25946fd77c5873b0303b858e861ce724e0dcd0/countries.json") else { return }
-        let urlSession = URLSession(configuration: URLSessionConfiguration.default)
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "GET"
-        let dataTask = urlSession.dataTask(with: urlRequest) { data, response, error in
-            print(response ?? "Response not available")
-            print(error ?? "Error not available")
-            print(data ?? "Data not available")
-            
-            guard let data = data else {
-                return
-            }
-            
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            do {
-                let response = try decoder.decode([Country].self, from: data)
-                self.countries = response
-                print(self.countries)
-                DispatchQueue.main.async {
-                 self.countryTableView.reloadData()
-                }
-            } catch {
-                print(error)
-            }
+    func refresh(countries: [Country]) {
+        self.countries = countries
+        
+        DispatchQueue.main.async {
+            self.countryTableView.reloadData()
         }
-        dataTask.resume()
     }
-    
 
     /*
     // MARK: - Navigation
@@ -79,23 +77,4 @@ class CountryViewController: UIViewController, UITableViewDataSource {
 
 }
 
-struct Country: Decodable {
-    let capital:String?
-    let code:String?
-    let currency:Currency?
-    let flag:String
-    let language:Language
-    let name:String
-    let region:String
-}
 
-struct Currency: Decodable {
-    let code:String
-    let name:String
-    let symbol:String?
-}
-
-struct Language: Decodable {
-    let code:String?
-    let name:String
-}

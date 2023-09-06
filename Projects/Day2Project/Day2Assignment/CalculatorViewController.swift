@@ -113,6 +113,10 @@ class CalculatorViewController: UIViewController {
         decimalIsAdded = true
     }
     @IBAction func equalsTapped(_ sender: Any) {
+        calculate()
+    }
+    
+    func calculate() {
         if let secondNum = Double(tempNumber) {
             secondNumber = secondNum
         }
@@ -156,6 +160,13 @@ class CalculatorViewController: UIViewController {
     
     func setOperation(operationInput: Operation) {
         if (operation == nil) {
+            if let firstNum = Double(numberLabel.text ?? "0") {
+                firstNumber = firstNum
+            }
+            operation = operationInput
+            tempNumber = "0"
+        } else if (operation != nil) {
+            calculate()
             if let firstNum = Double(numberLabel.text ?? "0") {
                 firstNumber = firstNum
             }
