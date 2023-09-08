@@ -11,16 +11,21 @@ import SafariServices
 class NewsViewController: UIViewController {
     
     var newsViewModel: NewsViewModel?
-    var articles: [Article]?
     @IBOutlet weak var newsTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "News screen"
         newsViewModel = NewsViewModel()
-        newsViewModel?.parseJSON({ [weak self] (news) in
-			self?.articles = news?.articles
-			self?.newsTableView.reloadData()
+        newsViewModel?.parseJSON({ [weak self] (result) in
+            switch result {
+            case .success(nil):
+                self?.newsTableView.reloadData()
+            case .failure(let error):
+                print(error.localizedDescription)
+            case .success(.some(_)):
+                print("")
+            }
         })
     }
     
@@ -29,7 +34,7 @@ class NewsViewController: UIViewController {
 extension NewsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let articles = articles else {
+        guard let articles = newsViewModel?.articles else {
             return 0
         }
         return articles.count
@@ -39,7 +44,7 @@ extension NewsViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as? NewsTableViewCell else {
             return UITableViewCell()
         }
-        if let article = articles?[indexPath.row] {
+        if let article = newsViewModel?.articles?[indexPath.row] {
             if let source = article.source,  let name = source.name, let title = article.title {
               
                 cell.setupNewsCell(source: name, title: title)
@@ -57,7 +62,7 @@ extension NewsViewController: UITableViewDataSource {
 extension NewsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let article = articles?[indexPath.row], let urlString = article.url, let url = URL(string: urlString) {
+        if let article = newsViewModel?.articles?[indexPath.row], let urlString = article.url, let url = URL(string: urlString) {
             let safariViewController = SFSafariViewController(url: url)
             present(safariViewController, animated: true, completion: nil)
             safariViewController.delegate = self

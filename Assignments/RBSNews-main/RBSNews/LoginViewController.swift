@@ -11,9 +11,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
-    
-    let expectedUsername = "rbs"
-    let expectedPassword = "1234"
+    var viewModel = LoginViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,31 +19,15 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-    
+        let result = viewModel.validateCredentials(userName: usernameTextField.text ?? "", password: passwordTextField.text ?? "")
+
+        if result == nil {
+            navigateToHomeScreen()
+        }
         
-        guard let username = usernameTextField.text, !username.isEmpty, let password = passwordTextField.text, !password.isEmpty else {
-            
-            Utility.shared.showAlert(self, "Alert!", "Please input credentials.")
-
-           return
-       }
-       
-       guard expectedUsername == username else {
-           Utility.shared.showAlert(self, "Alert!", "Username is invalid")
-
-          return
-       }
-       
-       guard expectedPassword == password else {
-           Utility.shared.showAlert(self, "Alert!", "Password is invalid")
-         return
-       }
-       navigateToHomeScreen()
         return
     }
-    
    
-    
     func navigateToHomeScreen() {
         if let newsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "NewsViewController") as? NewsViewController {
             if let navigation = navigationController {
@@ -53,23 +35,5 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-    func validateCredentials(userName: String, password: String) -> String? {
-        
-        if userName.isEmpty || password.isEmpty {
-            return "Please input credentials."
-        }
-        
-        if password != expectedPassword {
-            return "Password is invalid"
-        }
-        
-        if userName != expectedUsername {
-            return "Username is invalid"
-        }
-        
-        return nil
-    }
-    
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,7 @@
 		97F39B7825821D37009A7925 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F39B7625821D37009A7925 /* UIImageView+Extensions.swift */; };
 		97F39B8A25822995009A7925 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F39B8925822995009A7925 /* Utility.swift */; };
 		97F39B8B25822995009A7925 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F39B8925822995009A7925 /* Utility.swift */; };
+		CAA1FBD92AAB71270002B2E7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA1FBD82AAB71270002B2E7 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		97F39B6C258205E1009A7925 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		97F39B7625821D37009A7925 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		97F39B8925822995009A7925 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		CAA1FBD82AAB71270002B2E7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				97F39B1F2581F62F009A7925 /* NewsViewModel.swift */,
+				CAA1FBD82AAB71270002B2E7 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -260,8 +263,9 @@
 		97F39A732581DD4F009A7925 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					97F39A7A2581DD4F009A7925 = {
 						CreatedOnToolsVersion = 12.2;
@@ -338,6 +342,7 @@
 				97F39A7F2581DD4F009A7925 /* AppDelegate.swift in Sources */,
 				97F39B202581F62F009A7925 /* NewsViewModel.swift in Sources */,
 				97F39AB52581DFE0009A7925 /* NewsViewController.swift in Sources */,
+				CAA1FBD92AAB71270002B2E7 /* LoginViewModel.swift in Sources */,
 				97F39A812581DD4F009A7925 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
