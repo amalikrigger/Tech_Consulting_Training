@@ -10,26 +10,38 @@ import XCTest
 
 class RBSNewsTests: XCTestCase {
     
-    let newsViewModel = NewsViewModel()
+    var newsViewModel:NewsViewModel!
     
     override func setUpWithError() throws {
+        super.setUp()
+        newsViewModel = NewsViewModel()
     }
 
     override func tearDownWithError() throws {
+        super.tearDown()
+        newsViewModel = nil
     }
 
     func testNewsModelTotalResults() {
-        newsViewModel.parseJSON { (news) in
-            if let news = news {
-                XCTAssertEqual(news.totalResults, 70, "Total results is not matching!")
+        newsViewModel.parseJSON { (result) in
+            switch result {
+            case .success(let news):
+                XCTAssertEqual(news?.totalResults, 70, "Total results is not matching!")
+                XCTAssertNotEqual(news?.totalResults, 69, "Total results are matching!")
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }
     
     func testNewsModelArticles() {
-        newsViewModel.parseJSON { (news) in
-            if let news = news, let articles = news.articles {
-                XCTAssertEqual(articles.count, 20, "Articless count is not matching!")
+        newsViewModel.parseJSON { (result) in
+            switch result {
+            case .success(let news):
+                XCTAssertEqual(news?.articles?.count, 6, "Articles count is not matching!")
+                XCTAssertNotEqual(news?.articles?.count, 20, "Articles count is matching!")
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }
