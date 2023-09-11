@@ -52,5 +52,419 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07FF1D0F-F0E8-4182-B897-B2D12611CA00"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2Assignment/ViewModels/CalculatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "setOperation(operationInput:numberLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0D50F8C-BBC1-42A1-8A62-C4D2FB12A61C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2Assignment/ViewModels/CalculatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "setOperation(operationInput:numberLabel:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F0D50F8C-BBC1-42A1-8A62-C4D2FB12A61C - dd2a5654e7a38df9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.setDecimal(numberLabel: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.String"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "F0D50F8C-BBC1-42A1-8A62-C4D2FB12A61C - 1d8e74067828a516"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.setOperation(operationInput: Day2Assignment.Operation, numberLabel: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFC5E595-51C0-452F-B8EC-2CFD48043CA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2Assignment/ViewModels/CalculatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "setOperation(operationInput:numberLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CD7CC84-D251-4E3E-86E7-4D573C0E04A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2Assignment/ViewModels/CalculatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "calculate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7CD7CC84-D251-4E3E-86E7-4D573C0E04A1 - 634a5084bc932f51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.calculate() -&gt; Swift.String"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "7CD7CC84-D251-4E3E-86E7-4D573C0E04A1 - 634a5084bc932f51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.calculate() -&gt; Swift.String"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "7CD7CC84-D251-4E3E-86E7-4D573C0E04A1 - 634a5084bc932f51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.calculate() -&gt; Swift.String"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "296">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C141B35-721C-4981-A691-62657BC32A94"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2Assignment/ViewModels/CalculatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "calculate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C141B35-721C-4981-A691-62657BC32A94 - 634a5084bc932f76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.calculate() -&gt; Swift.String"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "4C141B35-721C-4981-A691-62657BC32A94 - 634a5084bc932f76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.calculate() -&gt; Swift.String"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "4C141B35-721C-4981-A691-62657BC32A94 - a6e0e9b5138ac383"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.calculate() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B778905E-DE93-4174-BB72-89C68D109677"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2AssignmentTests/CalculatorTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testCalculate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "880D1D7C-DB55-4796-814A-62229BAB48D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2AssignmentTests/CalculatorTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testCalculate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2E4B7C4-F0CD-46ED-9F9E-ECCD4AA17D66"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2AssignmentTests/CalculatorTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "testCalculate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0B78F10-523C-4515-8373-FF5CB83C4D37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2AssignmentTests/CalculatorTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "testCalculate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B0C9F30-8C30-4749-9C55-98CAA0155818"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2AssignmentTests/CalculatorTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "testChangeSign()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69781C77-9735-4AB4-96E8-984D61380BCA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2AssignmentTests/CalculatorTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "testChangeSign()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55D8A00F-AA74-48A7-B9CD-7C875A66EEAC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2AssignmentTests/CalculatorTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "testSetOperation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "55D8A00F-AA74-48A7-B9CD-7C875A66EEAC - 90b4337ee16c49cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2AssignmentTests.CalculatorTests.testSetOperation() -&gt; ()"
+                  moduleName = "Day2AssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2AssignmentTests/CalculatorTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "4636">
+               </Location>
+               <Location
+                  uuid = "55D8A00F-AA74-48A7-B9CD-7C875A66EEAC - 90b4337ee16c49cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2AssignmentTests.CalculatorTests.testSetOperation() -&gt; ()"
+                  moduleName = "Day2AssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2AssignmentTests/CalculatorTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "4940">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C87276A-C746-4B16-A015-8450EE891AFB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2Assignment/ViewModels/CalculatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "setOperation(operationInput:numberLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9EF8AD0-3D6F-4B7E-9529-87F7C645D2C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Day2Assignment/ViewModels/CalculatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "setOperation(operationInput:numberLabel:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E9EF8AD0-3D6F-4B7E-9529-87F7C645D2C7 - 1d8e740678289b64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.setOperation(operationInput: Day2Assignment.Operation, numberLabel: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "E9EF8AD0-3D6F-4B7E-9529-87F7C645D2C7 - 1d8e740678289b64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Day2Assignment.CalculatorViewModel.setOperation(operationInput: Day2Assignment.Operation, numberLabel: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Day2Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/Day2Project/Day2Assignment/ViewModels/CalculatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "820">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

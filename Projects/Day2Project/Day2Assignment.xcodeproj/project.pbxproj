@@ -11,6 +11,9 @@
 		CA2F086A2AA230E600CD85EA /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2F08692AA230E600CD85EA /* CountryViewController.swift */; };
 		CA2F086C2AA2316800CD85EA /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2F086B2AA2316800CD85EA /* CountryTableViewCell.swift */; };
 		CA358A282A98647700C17BC7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA358A272A98647700C17BC7 /* CalculatorViewController.swift */; };
+		CA5B82E82AAE3D9700D3BD0F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B82E72AAE3D9700D3BD0F /* CalculatorViewModel.swift */; };
+		CA5B82EA2AAE46BF00D3BD0F /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B82E92AAE46BF00D3BD0F /* Operations.swift */; };
+		CA5B82F22AAE83FA00D3BD0F /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B82F12AAE83FA00D3BD0F /* CalculatorTests.swift */; };
 		CA8B3B2F2A9F709100783AD9 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B2E2A9F709100783AD9 /* StudentTableViewController.swift */; };
 		CA8B3B312A9F77FA00783AD9 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B302A9F77FA00783AD9 /* StudentTableViewCell.swift */; };
 		CA8B3B332A9FAC5900783AD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B322A9FAC5900783AD9 /* HomeViewController.swift */; };
@@ -59,6 +62,9 @@
 		CA2F08692AA230E600CD85EA /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		CA2F086B2AA2316800CD85EA /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		CA358A272A98647700C17BC7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		CA5B82E72AAE3D9700D3BD0F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		CA5B82E92AAE46BF00D3BD0F /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		CA5B82F12AAE83FA00D3BD0F /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		CA8B3B2E2A9F709100783AD9 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 		CA8B3B302A9F77FA00783AD9 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		CA8B3B322A9FAC5900783AD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA5B82EB2AAE470500D3BD0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA5B82E92AAE46BF00D3BD0F /* Operations.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CA5B82EC2AAE471200D3BD0F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA5B82E72AAE3D9700D3BD0F /* CalculatorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		CAF3CCAF2A97DEDB00C6512B = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +164,8 @@
 		CAF3CCBA2A97DEDB00C6512B /* Day2Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				CA5B82EC2AAE471200D3BD0F /* ViewModels */,
+				CA5B82EB2AAE470500D3BD0F /* Models */,
 				CAF3CCBB2A97DEDB00C6512B /* AppDelegate.swift */,
 				CAF3CCBD2A97DEDB00C6512B /* SceneDelegate.swift */,
 				CAF3CCBF2A97DEDB00C6512B /* ViewController.swift */,
@@ -171,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF3CCD22A97DEDC00C6512B /* Day2AssignmentTests.swift */,
+				CA5B82F12AAE83FA00D3BD0F /* CalculatorTests.swift */,
 			);
 			path = Day2AssignmentTests;
 			sourceTree = "<group>";
@@ -330,9 +355,11 @@
 				CA8B3B332A9FAC5900783AD9 /* HomeViewController.swift in Sources */,
 				CA358A282A98647700C17BC7 /* CalculatorViewController.swift in Sources */,
 				CA8B3B312A9F77FA00783AD9 /* StudentTableViewCell.swift in Sources */,
+				CA5B82EA2AAE46BF00D3BD0F /* Operations.swift in Sources */,
 				CA8B3B352A9FBA2400783AD9 /* ProductViewController.swift in Sources */,
 				CA8B3B372A9FC30100783AD9 /* ProductTableViewCell.swift in Sources */,
 				CA29149F2A9CE690004DB475 /* LoginViewController.swift in Sources */,
+				CA5B82E82AAE3D9700D3BD0F /* CalculatorViewModel.swift in Sources */,
 				CAF3CCBE2A97DEDB00C6512B /* SceneDelegate.swift in Sources */,
 				CA2F086C2AA2316800CD85EA /* CountryTableViewCell.swift in Sources */,
 				CAF84D942AA82E3F00402085 /* Country.swift in Sources */,
@@ -345,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF3CCD32A97DEDC00C6512B /* Day2AssignmentTests.swift in Sources */,
+				CA5B82F22AAE83FA00D3BD0F /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
