@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4D43C9D6-920A-47BE-8622-2D762213F9AD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "500182E8-4B48-4547-8F95-E21F9C01B6FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "get(urlString:type:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1A913CC-B334-490F-93B0-C9A72D23E028"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "get(urlString:type:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CBC40BB-A2D4-4374-BDB5-4C8D97EC3862"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "get(urlString:type:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BFA41D1-F2A2-49B8-9FF7-68CED61EE781"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/view_models/SchoolViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getSAT(schoolName:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BFA41D1-F2A2-49B8-9FF7-68CED61EE781 - f92dfb82f0cdebd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; () in nyc_school_code_challenge.SchoolViewModel.getSAT(completionHandler: (Swift.Result&lt;Swift.Array&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/view_models/SchoolViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "5BFA41D1-F2A2-49B8-9FF7-68CED61EE781 - 1bea0bf8747ff905"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; () in nyc_school_code_challenge.SchoolViewModel.getSAT(schoolName: Swift.String, completionHandler: (Swift.Result&lt;Swift.Optional&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/view_models/SchoolViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50604789-39B6-413E-B4F2-639A6130689F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/SchoolViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50604789-39B6-413E-B4F2-639A6130689F - be1c79e4a57cd3cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nyc_school_code_challenge.SchoolViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/SchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "50604789-39B6-413E-B4F2-639A6130689F - be1c79e4a57cd3cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nyc_school_code_challenge.SchoolViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/SchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "50604789-39B6-413E-B4F2-639A6130689F - be1c79e4a57cd3cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nyc_school_code_challenge.SchoolViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/SchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "50604789-39B6-413E-B4F2-639A6130689F - be1c79e4a57cd3cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nyc_school_code_challenge.SchoolViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/SchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "50604789-39B6-413E-B4F2-639A6130689F - be1c79e4a57cd3cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nyc_school_code_challenge.SchoolViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/SchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC23819C-221A-42A8-8576-130AC2F2C22F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/SchoolViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EC23819C-221A-42A8-8576-130AC2F2C22F - be1c79e4a57cd3ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nyc_school_code_challenge.SchoolViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/SchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "EC23819C-221A-42A8-8576-130AC2F2C22F - be1c79e4a57cd3ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "nyc_school_code_challenge.SchoolViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/SchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "040A0648-C1E2-4CCA-80D8-1B0CE4901414"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/SchoolViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5E7F6BA-A0E2-4B89-9348-4F394279FACC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/view_models/SchoolViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getSAT(schoolName:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5782215-2642-4227-879E-3324176DEF35"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/view_models/SchoolViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getSAT(schoolName:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B5782215-2642-4227-879E-3324176DEF35 - 1bea0bf8747ff9e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; () in nyc_school_code_challenge.SchoolViewModel.getSAT(schoolName: Swift.String, completionHandler: (Swift.Result&lt;Swift.Optional&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/view_models/SchoolViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  uuid = "B5782215-2642-4227-879E-3324176DEF35 - 59579ac4192ab3f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; () in nyc_school_code_challenge.SchoolViewModel.getSAT(dbn: Swift.String, completionHandler: (Swift.Result&lt;Swift.Optional&lt;nyc_school_code_challenge.SAT&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "nyc_school_code_challenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amalikrigger/Documents/TechConsulting/Training/Projects/nyc_school_code_challenge/nyc_school_code_challenge/view_models/SchoolViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "840">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1BEC6B0-2539-405D-A38F-9757C36EB8C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nyc_school_code_challenge/SchoolViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

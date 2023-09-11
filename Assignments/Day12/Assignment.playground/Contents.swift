@@ -8,8 +8,6 @@ var greeting = "Hello, playground"
  // 1. refactor loginViewController to MVVM and write tests
  // 2. Refactor NewsViewController to MVVM and write tests
 
-
-
 // 3. Convert Calculator APP To MVVM and write tests for ViewModel
 
 
