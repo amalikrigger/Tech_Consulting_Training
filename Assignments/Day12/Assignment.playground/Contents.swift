@@ -10,7 +10,42 @@ var greeting = "Hello, playground"
 
 // 3. Convert Calculator APP To MVVM and write tests for ViewModel
 
-
+/*
+ 1. What are Optionals?
+ - Optionals are properties or values that may or may not have a value. They can be nil.
+ 
+ 2. Different ways to safely unwrap Optionals?
+ - Optional binding, Optional unwrapping (if let & guard let), Nil Coalescing (?? operator), and Optional Chaining (student?.name)
+ 
+ 3. Diff b/w if let and guard let?
+ - if let is used to unwrap an Optional variable or property and provide a new variable within that scope. guard let is used for
+ early exit or validation in functions or methods. It checks if an Optional contains a non-nil value and assigns it to a new
+ constant or varible. If it is nil then it returns.
+ 
+ 4. What is Optional Chaining?
+ - Optional Chaining is used to access properties of an Optional without having to unwrap it. You can safely access properties, methods
+ or subscripts of an Optional without having to do a bunch of conditional checks.
+ 
+ 5. What is Force Unwrapping?
+ - Force Unwrapping is using the "!" symbol at the end of a variable, property, or method to unwrap the Optional when you know that it
+ will not be nil.
+ 
+ 6. Give an example where you can use Force Unwrapping?
+ - In a case where you know the variable, property or method won't be nil. For example; If you return a value from a method that can
+ return String or nil, when you try to use the variable returned you will need to unwrap it; however, if you nil coalesce the returned
+ value, then you know that the value will never return nil. So when you using the returned value you can Force Unwrap it for convenience.
+ 
+ 7. What are Optionals behind the scene?
+ - Behind the scenes an Optional is an enum with a value. It can be a wrapped value or the absence of a value.
+ 
+ 8. Diff b/w nil and null?
+ - They are both terms used in different languages to represent the absence of a value. javascript, Java, and C# uses null and Swift uses
+ nil.
+ 
+ 9. What is the nil coalescing operator?
+ - The nil coalescing operator is the "??" symbol. It is used to provide a default value in case the variable, property, or method is nil.
+ (return stringVariable ?? "")
+ */
 
 
 
