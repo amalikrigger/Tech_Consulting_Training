@@ -7,38 +7,22 @@
 
 import UIKit
 
-protocol NetworkManagerActions {
-    func refresh(countries: [Country])
+protocol CountryTableViewProtocol {
+    func refreshTable()
+    func showError(message:String, buttonText:String)
 }
 
-class CountryViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
-//class CountryViewController: UIViewController, UITableViewDataSource, NetworkManagerActions {
+class CountryViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, CountryTableViewProtocol {
     @IBOutlet weak var countrySearchBar: UISearchBar!
     @IBOutlet weak var countryTableView: UITableView!
-    private var countries: [Country] = []
-    private var searchedCountries: [Country] = []
-    var searching = false
     private let networkManager = NetworkManager()
+    let viewModel = CountryViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         countryTableView.dataSource = self
-        self.countrySearchBar.delegate = self
-//        networkManager.delegate = self
-        networkManager.getCountries { result in
-            switch result {
-                case .success(let countries):
-                    self.countries = countries
-                    DispatchQueue.main.async {
-                        self.countryTableView.reloadData()
-                    }
-                case .failure(let error):
-                    DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                        self.present(alert, animated: true, completion: nil)
-                    }
-            }
-        }
+        countrySearchBar.delegate = self
+        viewModel.delegate = self
+        viewModel.setup()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,55 +30,48 @@ class CountryViewController: UIViewController, UITableViewDataSource, UISearchBa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if searching {
-            return searchedCountries.count
-        } else {
-            return countries.count
-        }
+        return viewModel.countries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let countryCell = tableView.dequeueReusableCell(withIdentifier: "countryCell") as? CountryTableViewCell
         
-        if searching {
-            countryCell?.countryNameLabel.text = searchedCountries[indexPath.row].name
-            countryCell?.capitalLabel.text = searchedCountries[indexPath.row].capital
-            countryCell?.regionLabel.text = searchedCountries[indexPath.row].region
-            countryCell?.countryCodeLabel.text = searchedCountries[indexPath.row].code
-        } else {
-            countryCell?.countryNameLabel.text = countries[indexPath.row].name
-            countryCell?.capitalLabel.text = countries[indexPath.row].capital
-            countryCell?.regionLabel.text = countries[indexPath.row].region
-            countryCell?.countryCodeLabel.text = countries[indexPath.row].code
-        }
-
+        countryCell?.countryNameLabel.text = viewModel.countries[indexPath.row].name
+        countryCell?.capitalLabel.text = viewModel.countries[indexPath.row].capital
+        countryCell?.regionLabel.text = viewModel.countries[indexPath.row].region
+        countryCell?.countryCodeLabel.text = viewModel.countries[indexPath.row].code
+        countryCell?.index = indexPath.row
+        countryCell?.viewModel = viewModel
         return countryCell ?? UITableViewCell()
     }
     
-    func refresh(countries: [Country]) {
-        self.countries = countries
-        
-        DispatchQueue.main.async {
-            self.countryTableView.reloadData()
-        }
-    }
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchedCountries = countries.filter { $0.name.lowercased().prefix(searchText.count) == searchText.lowercased()
-        }
-        searching = true
+        viewModel.filterCountries(searchText: searchText)
         DispatchQueue.main.async {
             self.countryTableView.reloadData()
         }
     }
         
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searching = false
-        searchBar.text = ""
         DispatchQueue.main.async {
             self.countryTableView.reloadData()
         }
     }
+    
+    func refreshTable() {
+        DispatchQueue.main.async {
+            self.countryTableView.reloadData()
+        }
+    }
+    
+    func showError(message:String, buttonText:String) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: buttonText, style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+
 
     /*
     // MARK: - Navigation

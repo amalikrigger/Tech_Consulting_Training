@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i6-4h-92r">
-                                <rect key="frame" x="10" y="123" width="373" height="57"/>
+                                <rect key="frame" x="10" y="103" width="373" height="57"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
-                            <constraint firstItem="2i6-4h-92r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4Bz-sj-ozd"/>
+                            <constraint firstItem="2i6-4h-92r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Bz-sj-ozd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZE-ho-2oC" secondAttribute="trailing" constant="30" id="5fy-bb-vBX"/>
                             <constraint firstItem="8N9-06-B99" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="687-wb-ozh"/>
                             <constraint firstAttribute="bottom" secondItem="8N9-06-B99" secondAttribute="bottom" id="Dz1-Pg-Cmr"/>
@@ -426,6 +426,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="jpT-FO-KUj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Ffl-FX-myG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <color key="barTintColor" systemColor="systemIndigoColor"/>

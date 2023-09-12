@@ -14,6 +14,7 @@
 		CA5B82E82AAE3D9700D3BD0F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B82E72AAE3D9700D3BD0F /* CalculatorViewModel.swift */; };
 		CA5B82EA2AAE46BF00D3BD0F /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B82E92AAE46BF00D3BD0F /* Operations.swift */; };
 		CA5B82F22AAE83FA00D3BD0F /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B82F12AAE83FA00D3BD0F /* CalculatorTests.swift */; };
+		CA6B71552AB0B60D00AFBEA3 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B71542AB0B60D00AFBEA3 /* CountryViewModel.swift */; };
 		CA8B3B2F2A9F709100783AD9 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B2E2A9F709100783AD9 /* StudentTableViewController.swift */; };
 		CA8B3B312A9F77FA00783AD9 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B302A9F77FA00783AD9 /* StudentTableViewCell.swift */; };
 		CA8B3B332A9FAC5900783AD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8B3B322A9FAC5900783AD9 /* HomeViewController.swift */; };
@@ -65,6 +66,7 @@
 		CA5B82E72AAE3D9700D3BD0F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		CA5B82E92AAE46BF00D3BD0F /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		CA5B82F12AAE83FA00D3BD0F /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		CA6B71542AB0B60D00AFBEA3 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 		CA8B3B2E2A9F709100783AD9 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 		CA8B3B302A9F77FA00783AD9 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		CA8B3B322A9FAC5900783AD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5B82E72AAE3D9700D3BD0F /* CalculatorViewModel.swift */,
+				CA6B71542AB0B60D00AFBEA3 /* CountryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -139,11 +142,6 @@
 		CAF3CCAF2A97DEDB00C6512B = {
 			isa = PBXGroup;
 			children = (
-				CAF84D902AA7724B00402085 /* Country.storyboard */,
-				CA9FE3222AA11873008AC235 /* Home.storyboard */,
-				CA9FE31F2AA117AF008AC235 /* Calculator.storyboard */,
-				CA9FE31C2AA11781008AC235 /* Student.storyboard */,
-				CA9FE3192AA11754008AC235 /* Product.storyboard */,
 				CAF3CCBA2A97DEDB00C6512B /* Day2Assignment */,
 				CAF3CCD12A97DEDC00C6512B /* Day2AssignmentTests */,
 				CAF3CCDB2A97DEDC00C6512B /* Day2AssignmentUITests */,
@@ -164,6 +162,11 @@
 		CAF3CCBA2A97DEDB00C6512B /* Day2Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				CAF84D902AA7724B00402085 /* Country.storyboard */,
+				CA9FE3222AA11873008AC235 /* Home.storyboard */,
+				CA9FE31F2AA117AF008AC235 /* Calculator.storyboard */,
+				CA9FE31C2AA11781008AC235 /* Student.storyboard */,
+				CA9FE3192AA11754008AC235 /* Product.storyboard */,
 				CA5B82EC2AAE471200D3BD0F /* ViewModels */,
 				CA5B82EB2AAE470500D3BD0F /* Models */,
 				CAF3CCBB2A97DEDB00C6512B /* AppDelegate.swift */,
@@ -360,6 +363,7 @@
 				CA8B3B372A9FC30100783AD9 /* ProductTableViewCell.swift in Sources */,
 				CA29149F2A9CE690004DB475 /* LoginViewController.swift in Sources */,
 				CA5B82E82AAE3D9700D3BD0F /* CalculatorViewModel.swift in Sources */,
+				CA6B71552AB0B60D00AFBEA3 /* CountryViewModel.swift in Sources */,
 				CAF3CCBE2A97DEDB00C6512B /* SceneDelegate.swift in Sources */,
 				CA2F086C2AA2316800CD85EA /* CountryTableViewCell.swift in Sources */,
 				CAF84D942AA82E3F00402085 /* Country.swift in Sources */,
